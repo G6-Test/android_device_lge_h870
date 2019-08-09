@@ -18,11 +18,9 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit some common RR stuff.
-$(call inherit-product, vendor/rr/config/common.mk)
+# Inherit some common ResurrectionRemix stuff.
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
-# Inherit from h870 device
-$(call inherit-product, device/lge/h870/device.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := h870
